@@ -1,0 +1,11 @@
+[project]
+name = "b4-mcp"
+version = "0.1.0"
+description = "MCP server that fetches kernel patch threads via b4"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+]
+
+[project.scripts]
+b4-mcp = "server:main"
